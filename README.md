@@ -22,7 +22,7 @@ To deploy the repository, please follow these steps:
 
 1. Create a Service Account on Firebase. This can be done on the Firebase Dashboard via Settings -> Service Account -> "Generate Private Key" as described [here]( https://firebase.google.com/docs/admin/setup#python)
 
-2. Replace the file [serviceAccount.json](https://github.com/InstruCRX/InstruCRX_frontend/blob/main/userDataScripts/serviceAccount.json) with your created key (also naming it serviceAccount.json). You will need two create two Firestore databases, one which holds all available VMS (e.g. InstruVMs) and one in which the actual user data (of the registered trainees) is stored (e.g. instruCRXTraineeData), for this reason, add the following lines to firebase.js (**both in [InstruCRX_userManagement](https://github.com/Instru_CRX/InstruCRX_userManagement) AND [InstruCRX_frontend](https://github.com/InstruCRX/InstruCRX_frontend)**)
+2. Replace the file [serviceAccount.json](https://github.com/InstruCRX/InstruCRX_frontend/blob/main/userDataScripts/serviceAccount.json) with your created key (also naming it serviceAccount.json). You will need two create two Firestore databases, one which holds all available VMS (e.g. InstruVMs) and one in which the actual user data (of the registered trainees) is stored (e.g. instruCRXTraineeData), for this reason, add the following lines to firebase.js (**both in [InstruCRX_userManagement](https://github.com/InstruCRX/InstruCRX_userManagement) AND [InstruCRX_frontend](https://github.com/InstruCRX/InstruCRX_frontend)**)
 
 ```bash
 const VM_db = db.collection('InstruVMs')
